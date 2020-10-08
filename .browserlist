@@ -1,0 +1,6 @@
+# Our officially supported browsers
+# Autoprefixer will look for this file to set it's options.browsers
+
+last 2 versions
+> 1%
+IE 11
