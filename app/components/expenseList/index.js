@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Flex, Box, Card } from 'rebass';
 
 export const ExpenseList = ({ list }) => (
-  <Flex as="ul" mt={4}>
+  <Flex as="ul" mt={4} flexDirection="column">
     {list &&
       list.map(item => (
         <Box as="li" width={1}>

@@ -37,11 +37,11 @@ const HomePage = () => {
     dispatch(loadExchangeRates());
   }, []);
 
-  const addExpense = values => {
+  const addExpense = (values, { resetForm }) => {
     // todo: check to see if the item you are adding will but the total over limit and prevent and show
     // unique error message in this case
-
     dispatch(addExpenseItem({ expense: values }));
+    resetForm();
   };
   return (
     <Flex flexDirection="column">
